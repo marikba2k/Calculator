@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tip Calculator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+            integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" 
+            crossorigin="anonymous">
+
+        <link rel="stylesheet" 
+            href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" 
+            crossorigin="anonymous"/>    
+        
+        <link rel="stylesheet" href="style.css">
+        <div class="container">
+            <div class="calculator">
+                <h3 style="text-align:center; font-weight:bold;">Tip Calculator</h3>
+                <p style="border-bottom:2px solid rgba(211,211,211,0.5);"></p>
+                <br>
+                <label for="amount">Bill Amount</label>
+                <br>
+                <button><i class="fas fa-dollar-sign"></i></button><input id="amount" type="number">
+                <br>
+                <br>
+                <label for="guest">Number of guests</label>
+                <br>
+                <button><i class="fas fa-male"></i></button><input id="guests" type="number">
+                <br>
+                <br>
+                <label for="quality">Service quality</label>
+                <br>
+                <select id="quality">
+                    <option disabled selected value='0'>Choose...</option>
+                    <option value="0.3">30% - Outstanding</option>
+                    <option value="0.2">20% - Good</option>
+                    <option value="0.15">15% - OK</option>
+                    <option value='0.1'>10% - Bad</option>
+                    <option value="0.05">0.5% - Awful</option>
+                </select>
+
+                    <div style="text-align:center;">
+                        <p style="border-top:2px solid lightgray"></p>
+                        <button onclick="calculate()" style="border-radius:5px; width:fit-content;">Calculate</button>
+                    </div>     
+            </div>
+            <div id="tip-amount"></div>
+            
+        </div>
+
+    </head>
+    <body>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" 
+        crossorigin="anonymous"></script>
+        <script src="script.js" ></script>
+    </body>
+</html>
